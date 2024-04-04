@@ -7,9 +7,6 @@ import SendButton from "./button.png";
 // ("use client");
 
 export default function Home() {
-  function handleSubmit() {
-    alert("Button Clicked");
-  }
   return (
     <main className={styles.main}>
       <p className={styles.title}>Lorem Ipsum...</p>
@@ -20,10 +17,9 @@ export default function Home() {
         className={styles.notification}
         alt="description"
       ></Image>
-      <button onClick={handleSubmit()} className={styles.sendBtn}>
+      <button className={styles.sendBtn}>
         <Image src={SendButton} alt="submit"></Image>
       </button>
-      
     </main>
   );
 }
